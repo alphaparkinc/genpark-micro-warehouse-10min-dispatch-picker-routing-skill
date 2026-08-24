@@ -1,0 +1,38 @@
+{
+  "name": "genpark-micro-warehouse-10min-dispatch-picker-routing-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - 10-minute micro-warehouse darkstore order dispatch, optimized picker aisle routing, and hyper-local rider scheduling.",
+  "author": "genpark",
+  "category": "logistics",
+  "tags": [
+    "quick-commerce",
+    "10-minute-delivery",
+    "darkstore-routing",
+    "picker-optimization",
+    "zepto"
+  ],
+  "inputs": {
+    "items_count": {
+      "type": "integer"
+    },
+    "delivery_lat_lng": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "dispatch_token": {
+      "type": "string"
+    },
+    "total_delivery_duration_mins": {
+      "type": "number"
+    },
+    "sla_10min_guaranteed": {
+      "type": "boolean"
+    },
+    "picker_aisle_sequence": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
